@@ -14,11 +14,18 @@ public class CalcPanel extends GeneralPanel {
     private JButton Eight;
     private JButton Nine;
     private JButton Zero;
+    private JButton Add;
+    private JButton Subtract;
+    private JButton Multiply;
+    private JButton Divide;
+    private JButton Equals;
+
 
 
     public CalcPanel() {
         super();
         Screen = new JButton("Screen");
+        Screen.setPreferredSize(new Dimension(300, 150));
         One = new JButton("1");
         Two = new JButton("2");
         Three = new JButton("3");
@@ -29,8 +36,13 @@ public class CalcPanel extends GeneralPanel {
         Eight  = new JButton("8");
         Nine = new JButton("9");
         Zero = new JButton("0");
+        Add = new JButton("+");
+        Subtract = new JButton("-");
+        Multiply = new JButton("*");
+        Divide = new JButton("/");
+        Equals = new JButton("=");
 
-        add(Screen);
+        add(Screen, BorderLayout.NORTH);
         add(One);
         add(Two);
         add(Three);
@@ -41,5 +53,10 @@ public class CalcPanel extends GeneralPanel {
         add(Eight);
         add(Nine);
         add(Zero);
+        add(Add);
+        add(Subtract);
+        add(Multiply);
+        add(Divide);
+        add(Equals);
     }
 }
